@@ -671,7 +671,7 @@ body {
 }
 
 .hero-bg {
-    background-image: url('/assets/hero.png');
+    background-image: url('/assets/hero.jpg');
     background-size: cover;
     background-position: center;
     filter: brightness(0.5);
@@ -764,7 +764,7 @@ body {
 }
 
 .testimonial-card {
-    max-width: 80%; /* reduced width */
+    max-width: 60%; /* reduced width */
     margin: 0 auto;   /* center the card */
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
