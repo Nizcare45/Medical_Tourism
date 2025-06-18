@@ -785,3 +785,51 @@ body {
     transform: translateY(0px);
   }
 }
+
+.flag-card {
+    background: #f8f9fa;
+    border-radius: 1.5rem;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.flag-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.flag-card span {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+.countries-we-serve .section-title h2 {
+    font-size: 2.5rem;
+}
+
+.countries-we-serve .btn {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.flag-img-wrapper {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 0.5rem;
+  border: 2px solid #dee2e6; /* optional: subtle border */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.flag-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
