@@ -270,63 +270,112 @@
         </div>
     </section>
 
-    <section id="who" class="who-wrapper py-5 bg-light position-relative overflow-hidden">
-        <img src="assets/plane.png" class="position-absolute floating-icon plane-icon" alt="Plane Icon"
-            style="top: 20%; left: 5%; width: 100px; opacity: 0.3;" />
-        <img src="assets/map.png" class="position-absolute floating-icon map-icon" alt="World Icon"
-            style="top: 10%; right: 10%; width: 100px; opacity: 0.3;" />
-        <img src="assets/icons/medical-cross.svg" class="position-absolute floating-icon cross-icon" alt="Medical Cross"
-            style="bottom: 10%; left: 10%; width: 50px; opacity: 0.15;" />
-
+    <section class="why-nizcare-section min-vh-100 d-flex align-items-center bg-light">
         <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title fw-bold" data-aos="zoom-in">Why Nizcare?</h2>
-            </div>
+            <div class="row g-4 align-items-stretch">
 
-            <div class="row align-items-center g-5 bg-white shadow-lg rounded-4 p-3 mt-5">
+                <!-- Enquiry Form -->
                 <div class="col-lg-6" data-aos="fade-right">
-                    <img src="assets/why.jpg" alt="Why choose us" class="img-fluid rounded-4 mx-auto d-block"
-                        style="max-width: 530px; width: 100%;">
+                    <div
+                        class="bg-white shadow-sm rounded-4 p-3 p-md-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <h2 class="fw-bold text-center mb-2" data-aos="fade-down" data-aos-delay="100">Enquire Now
+                            </h2>
+                            <p class="text-muted text-center mb-3 small" data-aos="fade-down" data-aos-delay="200">
+                                Let us know your details and we’ll get back to you.
+                            </p>
+
+                            <form class="small">
+                                <div class="mb-2" data-aos="fade-up" data-aos-delay="100">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" id="name" class="form-control" placeholder="Enter your name"
+                                        required />
+                                </div>
+
+                                <div class="mb-2">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" id="phone" class="form-control" placeholder="Enter phone number"
+                                        required />
+                                </div>
+
+                                <div class="mb-2" data-aos="fade-up" data-aos-delay="200">
+                                    <label for="languages" class="form-label">Known Languages</label>
+                                    <select class="form-select" id="languages" required>
+                                        <option disabled selected>Select language(s)</option>
+                                        <option>English</option>
+                                        <option>Hindi</option>
+                                        <option>Bengali (Bangladesh)</option>
+                                        <option>Arabic (Iraq)</option>
+                                        <option>Arabic (Yemen)</option>
+                                        <option>Arabic (Oman)</option>
+                                        <option>Dhivehi (Maldives)</option>
+                                        <option>Arabic (Sudan)</option>
+                                        <option>Swahili (Kenya)</option>
+                                        <option>English (Nigeria)</option>
+                                        <option>Swahili (Tanzania)</option>
+                                        <option>Burmese (Myanmar)</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-2" data-aos="fade-up" data-aos-delay="250">
+                                    <label for="city" class="form-label">Select City for treatment</label>
+                                    <select class="form-select" id="city" required>
+                                        <option disabled selected>Select your city</option>
+                                        <option>Chennai</option>
+                                        <option>Bangalore</option>
+                                        <option>Mumbai</option>
+                                        <option>Hyderabad</option>
+                                        <option>Delhi</option>
+                                        <option>Kolkata</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-2" data-aos="fade-up" data-aos-delay="300">
+                                    <label for="query" class="form-label">Enter Your Medical Query</label>
+                                    <textarea class="form-control" id="query" rows="2" placeholder="Write your query..."
+                                        required></textarea>
+                                </div>
+
+                                <div class="mb-3" data-aos="fade-up" data-aos-delay="350">
+                                    <label for="attachments" class="form-label">Attach Medical Files (PDF/Image)</label>
+                                    <input type="file" class="form-control" id="attachments" accept=".pdf,image/*" />
+                                </div>
+
+                                <div class="d-grid" data-aos="zoom-in" data-aos-delay="400">
+                                    <button type="submit" class="btn btn-warning text-white">Submit Enquiry</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
 
+                <!-- Why Choose Nizcare -->
                 <div class="col-lg-6" data-aos="fade-left">
-                    <div class="p-3 p-lg-4 bg-white rounded-4 animate__animated animate__fadeInUp">
-                        <p class="fs-5 mb-3">
-                            <i class="fas fa-award text-warning me-2"></i>
-                            <strong>NABH & JCI Partner Hospitals</strong>
-                        </p>
-
-                        <p class="fs-5 mb-3">
-                            <i class="fas fa-globe-asia text-success me-2"></i>
-                            <strong>Patients from 10+ countries</strong>
-                        </p>
-
-                        <p class="fs-5 mb-3">
-                            <i class="fas fa-language text-info me-2"></i>
-                            <strong>Multilingual Care Managers</strong>
-                        </p>
-
-                        <p class="fs-5 mb-3">
-                            <i class="fas fa-shield-alt text-danger me-2"></i>
-                            <strong>HIPAA/GDPR-Compliant Data Handling</strong>
-                        </p>
-                        <p class="fs-5 mb-3">
-                            <i class="fas fa-hospital text-primary me-2"></i>
-                            <strong>World-class healthcare at affordable prices.</strong>
-                        </p>
-                        <p class="fs-5 mb-3">
-                            <i class="fas fa-user-friends text-success me-2"></i>
-                            <strong>Personalized care</strong>
-                        </p>
-                        <p class="fs-5 mb-3">
-                            <i class="fas fa-money-bill-wave text-warning me-2"></i>
-                            <strong>Transparent pricing</strong>
-                        </p>
-                        <p class="fs-5">
-                            <i class="fas fa-heartbeat text-danger me-2"></i>
-                            With us, you’re not just a patient—you’re <strong>family.</strong><br>
-                            <em>Ready to start your health journey?</em>
-                        </p>
+                    <div class="bg-white shadow-sm rounded-4 p-4 h-100 d-flex flex-column justify-content-center">
+                        <h2 class="fw-bold mb-4 text-center fs-3" data-aos="fade-down" data-aos-delay="100">Why Choose
+                            Nizcare?</h2>
+                        <ul class="list-unstyled fs-5">
+                            <li class="mb-3" data-aos="fade-left" data-aos-delay="200"><i
+                                    class="fas fa-award text-warning me-2"></i> NABH & JCI Partner Hospitals</li>
+                            <li class="mb-3" data-aos="fade-left" data-aos-delay="250"><i
+                                    class="fas fa-globe text-success me-2"></i> Patients from 10+ countries</li>
+                            <li class="mb-3" data-aos="fade-left" data-aos-delay="300"><i
+                                    class="fas fa-language text-info me-2"></i> Multilingual Care Managers</li>
+                            <li class="mb-3" data-aos="fade-left" data-aos-delay="350"><i
+                                    class="fas fa-shield-alt text-danger me-2"></i> HIPAA/GDPR-Compliant Data Handling
+                            </li>
+                            <li class="mb-3" data-aos="fade-left" data-aos-delay="400"><i
+                                    class="fas fa-hospital text-primary me-2"></i> World-class healthcare at affordable
+                                prices</li>
+                            <li class="mb-3" data-aos="fade-left" data-aos-delay="450"><i
+                                    class="fas fa-user-friends text-success me-2"></i> Personalized care</li>
+                            <li class="mb-3" data-aos="fade-left" data-aos-delay="500"><i
+                                    class="fas fa-money-bill-wave text-warning me-2"></i> Transparent pricing</li>
+                            <li class="mb-1" data-aos="fade-left" data-aos-delay="550"><i
+                                    class="fas fa-heartbeat text-danger me-2"></i> You're not just a patient — you're
+                                <strong>family</strong>.
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
@@ -334,75 +383,65 @@
         </div>
     </section>
 
-    <section id="how" class="how-wrapper py-5">
-        <div class="text-center mb-5">
-            <h2 class="section-title fw-bold" data-aos="zoom-in">How It Works</h2>
-        </div>
-
+    <section id="how" class="py-5 bg-white">
         <div class="container">
-            <div class="row g-4">
+            <div class="text-center mb-5">
+                <h2 class="section-title fw-bold" data-aos="zoom-in">How It Works</h2>
+                <p class="text-muted small">A simple 6-step process to get world-class treatment with Nizcare</p>
+            </div>
+
+            <div class="timeline-wrapper position-relative">
 
                 <!-- Step 1 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up">
-                    <div class="p-4 rounded-4 shadow h-100 text-center hover-step">
-                        <div class="mb-3">
-                            <i class="fas fa-phone-alt fa-2x text-primary"></i>
-                        </div>
-                        <h5 class="fw-bold mb-2">Initial Consultation</h5>
-                        <p class="text-muted">Reach out to us with your medical needs. Our team reviews your case and
-                            recommends the best hospitals and specialists.</p>
+                <div class="timeline-step left" data-aos="fade-up">
+                    <div class="content bg-primary text-white shadow-sm">
+                        <div class="icon"><i class="fas fa-notes-medical"></i></div>
+                        <h6 class="fw-bold mt-2">Submit History</h6>
                     </div>
                 </div>
 
                 <!-- Step 2 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="p-4 rounded-4 shadow h-100 text-center hover-step">
-                        <div class="mb-3">
-                            <i class="fas fa-file-medical fa-2x text-success"></i>
-                        </div>
-                        <h5 class="fw-bold mb-2">Personalized Treatment Plan</h5>
-                        <p class="text-muted">We create a tailored treatment plan, including estimated costs and
-                            timelines, for your approval.</p>
+                <div class="timeline-step right" data-aos="fade-up" data-aos-delay="100">
+                    <div class="content bg-success text-white shadow-sm">
+                        <div class="icon"><i class="fas fa-user-md"></i></div>
+                        <h6 class="fw-bold mt-2">Consultation</h6>
                     </div>
                 </div>
 
                 <!-- Step 3 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="p-4 rounded-4 shadow h-100 text-center hover-step">
-                        <div class="mb-3">
-                            <i class="fas fa-plane-departure fa-2x text-info"></i>
-                        </div>
-                        <h5 class="fw-bold mb-2">Travel & Logistics Support</h5>
-                        <p class="text-muted">Once you’re ready, we assist with visa processing, travel arrangements,
-                            and comfortable accommodation.</p>
+                <div class="timeline-step left" data-aos="fade-up" data-aos-delay="200">
+                    <div class="content bg-info text-white shadow-sm">
+                        <div class="icon"><i class="fas fa-file-medical"></i></div>
+                        <h6 class="fw-bold mt-2">Treatment Plan</h6>
                     </div>
                 </div>
 
                 <!-- Step 4 -->
-                <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="p-4 rounded-4 shadow h-100 text-center hover-step">
-                        <div class="mb-3">
-                            <i class="fas fa-hospital-user fa-2x text-danger"></i>
-                        </div>
-                        <h5 class="fw-bold mb-2">Treatment & Care</h5>
-                        <p class="text-muted">Receive world-class medical care at our partner hospitals, with dedicated
-                            support throughout your stay.</p>
+                <div class="timeline-step right" data-aos="fade-up" data-aos-delay="300">
+                    <div class="content bg-warning text-white shadow-sm">
+                        <div class="icon"><i class="fas fa-plane-departure"></i></div>
+                        <h6 class="fw-bold mt-2">Travel Support</h6>
                     </div>
                 </div>
 
                 <!-- Step 5 -->
-                <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="400">
-                    <div class="p-4 rounded-4 shadow h-100 text-center hover-step">
-                        <div class="mb-3">
-                            <i class="fas fa-hand-holding-heart fa-2x text-warning"></i>
-                        </div>
-                        <h5 class="fw-bold mb-2">Post-Treatment Follow-Up</h5>
-                        <p class="text-muted">We ensure ongoing support and coordination for your recovery, even after
-                            you return home.</p>
+                <div class="timeline-step left" data-aos="fade-up" data-aos-delay="400">
+                    <div class="content bg-danger text-white shadow-sm">
+                        <div class="icon"><i class="fas fa-hospital-user"></i></div>
+                        <h6 class="fw-bold mt-2">Treatment</h6>
+                    </div>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="timeline-step right" data-aos="fade-up" data-aos-delay="500">
+                    <div class="content bg-dark text-white shadow-sm">
+                        <div class="icon"><i class="fas fa-hand-holding-heart"></i></div>
+                        <h6 class="fw-bold mt-2">Follow-Up</h6>
                     </div>
                 </div>
 
             </div>
+
         </div>
     </section>
 
@@ -816,6 +855,25 @@
             pagination: {
                 el: '.swiper-pagination',
             },
+        });
+
+        const phoneInputField = document.querySelector("#phone");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+            onlyCountries: [
+                "in", // India
+                "bd", // Bangladesh
+                "iq", // Iraq
+                "ye", // Yemen
+                "om", // Oman
+                "mv", // Maldives
+                "sd", // Sudan
+                "ke", // Kenya
+                "ng", // Nigeria
+                "tz", // Tanzania
+                "mm"  // Myanmar
+            ],
+            initialCountry: "in",
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
         });
     </script>
 
